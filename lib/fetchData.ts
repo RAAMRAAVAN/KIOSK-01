@@ -8,7 +8,7 @@ export const ContactUsAccess = false;
 export const AcademicsAccess = false;
 export const SocialInfraAccess = false;
 export const UpdatesAccess = false;
-export const HospitalID: number = 1;
+export const HospitalID: number = 9;
 export const VideosAccess = false;
 
 export const StaticHospital = () => {
