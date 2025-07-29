@@ -40,7 +40,7 @@ const LatestEvent = ({ open, setOpen, selectedVideo}) => {
                     alignItems: 'center'
                 }}
             >
-                <Box display='flex' width='60%' >
+                <Box display='flex' width='80%' >
                         {/* Make sure ReactPlayer re-renders by updating key */}
                         <VideoPlayer
                             key={1} // This will force the video to reset on change
@@ -81,7 +81,8 @@ const VideoPlayer = ({ url, handleClose, title, onVideoEnd }) => {
                 }}
             >
                 <ReactPlayer
-                    url={`https://accf-api.cancercareinstituteguwahati.org/storage/${url}`}
+                    // url={`https://accf-api.cancercareinstituteguwahati.org/storage/${url}`}
+                    url={url}
                     controls
                     playing={handlePlay}
                     // muted

@@ -24,6 +24,8 @@ import { LatestVideos2 } from "../../lib/fetchData";
 import SearchDoctors from "../(components)/DoctorCard/SearchDoctors";
 import { selectDoctors } from "@/redux/features/doctorSlice";
 
+const customVideo = [{id: 1, hospitalId: "1", addedBy: 1, name: "TATA Trust Asymptomatic", indexx: 1, link: null, name:"Integrated Robotic Surgery Facility", photo:"thumbnails/uGIqOddCYsqD433RG0IQaxdnL2ZtFnX33IgnqSIJ.png", updated_at:"2025-05-21 07:16:44", video:"TATA Trust Asymptomatic (Sub) (2).mp4"}]
+
 // ✅ Server Component
 const Home = () => {
   // const homeContent = HomeContent;
@@ -140,18 +142,18 @@ const Home = () => {
           </Suspense>
         </Element> */}
 
-        {/* <Element name="Stories">
+        <Element name="Stories">
           {LatestVideosData.length > 0 ? <Box display='flex' width='100%' justifyContent='center' marginTop={5}>
             <Box display='flex' width='90%' flexDirection='column' marginTop={2}>
               <Typography variant="h5" fontWeight="bold" marginBottom={3}>
                 Our Stories
               </Typography>
               <Suspense>
-                <VideoGrid LatestVideosData={LatestVideosData} />
+                <VideoGrid LatestVideosData={customVideo} />
               </Suspense>
             </Box>
           </Box> : <></>}
-        </Element> */}
+        </Element>
 
 
         {/* Our Hospitals */}
