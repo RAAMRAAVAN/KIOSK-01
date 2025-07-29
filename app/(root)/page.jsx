@@ -24,7 +24,7 @@ import { LatestVideos2 } from "../../lib/fetchData";
 import SearchDoctors from "../(components)/DoctorCard/SearchDoctors";
 import { selectDoctors } from "@/redux/features/doctorSlice";
 
-const customVideo = [{id: 1, hospitalId: "1", addedBy: 1, name: "TATA Trust Asymptomatic", indexx: 1, link: null, name:"Integrated Robotic Surgery Facility", photo:"thumbnails/uGIqOddCYsqD433RG0IQaxdnL2ZtFnX33IgnqSIJ.png", updated_at:"2025-05-21 07:16:44", video:"TATA Trust Asymptomatic (Sub) (2).mp4"}]
+const customVideo = [{id: 1, hospitalId: "1", addedBy: 1, name: "TATA Trust Asymptomatic", indexx: 1, link: null, name:"TATA Trust Asymptomatic", photo:"thumbnails/uGIqOddCYsqD433RG0IQaxdnL2ZtFnX33IgnqSIJ.png", updated_at:"2025-05-21 07:16:44", video:"TATA Trust Asymptomatic (Sub) (2).mp4"}]
 
 // ✅ Server Component
 const Home = () => {

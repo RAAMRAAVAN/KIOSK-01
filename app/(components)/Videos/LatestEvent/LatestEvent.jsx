@@ -86,7 +86,8 @@ const VideoPlayer = ({ url, handleClose, title, onVideoEnd }) => {
                     controls
                     playing={handlePlay}
                     // muted
-                    onEnded={onVideoEnd}
+                    loop
+                    // onEnded={onVideoEnd}
                     width="100%"
                     height="100%"
                     style={{
